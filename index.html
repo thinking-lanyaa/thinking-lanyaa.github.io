@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lanya | Virtual Fashion Creator</title>
+  <meta name="description" content="Lanya is a virtual AI fashion creator sharing fashion, accessories and style inspiration.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      color: #ddd;
+      margin-top: 5px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #ffe6f0, #fff);
+    }
+
+    .hero h2 {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .hero .tagline {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .ai-badge {
+      display: inline-block;
+      margin: 18px 0;
+      padding: 7px 15px;
+      background: #111;
+      color: white;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 5px;
+      border-radius: 25px;
+      text-decoration: none;
+      background: #111;
+      color: white;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card .emoji {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .about {
+      text-align: center;
+      background: white;
+      border-radius: 20px;
+    }
+
+    .work {
+      text-align: center;
+      background: #111;
+      color: white;
+      border-radius: 20px;
+    }
+
+    .work p {
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>LANYA</h1>
+    <p>Virtual Fashion Creator</p>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#looks">Looks</a>
+      <a href="#picks">Picks</a>
+      <a href="#about">About</a>
+      <a href="#work">Work With Lanya</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <span class="ai-badge">✨ AI / Virtual Creator</span>
+
+      <h2>Style. Fashion. Lanya.</h2>
+
+      <p class="tagline">
+        Fashion inspiration, accessories and everyday style ideas.
+      </p>
+
+      <div class="buttons">
+        <a class="btn" href="#looks">Explore Looks</a>
+        <a class="btn" href="#work">Collaborate</a>
+      </div>
+    </section>
+
+
+    <section id="looks">
+      <h2>Latest Looks</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="emoji">👗</div>
+          <h3>Fashion Look</h3>
+          <p>Discover the latest style inspiration from Lanya.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">👜</div>
+          <h3>Accessories</h3>
+          <p>Explore bags, accessories and styling ideas.</p>
+        </div>
+
+        <div class="card">
+          <div class="emoji">👟</div>
+          <h3>Everyday Style</h3>
+          <p>Simple fashion ideas for everyday outfits.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="picks">
+      <h2>Lanya's Picks</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="emoji">👜</div>
+          <h3>Fashion Bags</h3>
+          <p>Curated bag recommendations and style inspiration.</p>
+          <br>
+          <a class="btn" href="#" onclick="comingSoon()">Check Price</a>
+        </div>
+
+        <div class="card">
+          <div class="emoji">👠</div>
+          <h3>Footwear</h3>
+          <p>Fashionable footwear ideas and recommendations.</p>
+          <br>
+          <a class="btn" href="#" onclick="comingSoon()">Check Price</a>
+        </div>
+
+        <div class="card">
+          <div class="emoji">💎</div>
+          <h3>Accessories</h3>
+          <p>Accessories that can complete your look.</p>
+          <br>
+          <a class="btn" href="#" onclick="comingSoon()">Check Price</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="about">
+      <div class="about">
+        <h2>About Lanya</h2>
+
+        <p>
+          Lanya is a virtual AI fashion creator focused on fashion,
+          accessories and style inspiration.
+        </p>
+
+        <br>
+
+        <p>
+          This website shares fashion content, product recommendations
+          and collaboration opportunities.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="work">
+      <div class="work">
+        <h2>Work With Lanya</h2>
+
+        <p>
+          Interested in brand collaborations, campaigns or advertising?
+        </p>
+
+        <p>
+          Contact us for business and collaboration opportunities.
+        </p>
+
+        <a class="email" href="mailto:YOUR-EMAIL@example.com">
+          YOUR-EMAIL@example.com
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      © 2026 Lanya — Virtual Fashion Creator
+    </p>
+
+    <br>
+
+    <p>
+      Affiliate Disclosure: Some links may be affiliate links.
+      If you purchase through them, we may receive a commission.
+    </p>
+
+    <br>
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Contact</a>
+
+  </footer>
+
+
+  <script>
+    function comingSoon() {
+      alert("Product links will be added soon.");
+    }
+  </script>
+
+</body>
+</html>
